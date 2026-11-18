@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Sincere Seekers Revival Labor{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,650;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="navbar">
+        <a href="/" class="logo-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-4pWTF9XPh5s1RzNmWh96PewkamHHCFeg8cDN5HGOYA&s=10" alt="Logo" class="site-logo">
+            <div class="logo-text">
+                <span class="logo-title">Sincere Seekers</span>
+                <span class="logo-subtitle">Revival Labor</span>
+            </div>
+        </a>
+        <div class="nav-actions">
+            <button class="icon-btn" aria-label="Notifications">🔔</button>
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100" alt="Profile" class="avatar-badge">
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Mobile Bottom Navigation Dock -->
+    <nav class="mobile-bottom-nav">
+        <a href="/" class="nav-item active">
+            <span>⛪</span>
+            Home
+        </a>
+        <a href="/sermons" class="nav-item">
+            <span>📖</span>
+            Sermons
+        </a>
+        <a href="/labor" class="nav-item">
+            <span>🔥</span>
+            Labor
+        </a>
+        <a href="/events" class="nav-item">
+            <span>📅</span>
+            Events
+        </a>
+        <a href="/give" class="nav-item">
+            <span>❤️</span>
+            Give
+        </a>
+    </nav>
+
+</body>
+</html>
